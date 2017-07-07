@@ -1,0 +1,11 @@
+Implement a class Account in Groovy with the following
+
+> has an initial balance of 1000$
+> deposit and withdraw methods that take in an amount and modify balance
+> After three withdrawals deduct 2$ for every withdraw henceforth. 
+> Print the statement that denotes the transaction type(Deposit or Withdraw or Fees ...etc), amount and datetime. 
+
+>Create AccountUser class
+>Create an instance of Account say acc1 
+and deposit 200$ and withdraw 100$ six times. 
+Print the balance and statement.  
