@@ -3,6 +3,9 @@ class Person{
 	String name
 	int age
 	
+	def drive(){
+		println "$name is driving his car"
+	}
 	def eat(items){
 		int localVar = 10
 		println name + " is eating " + items

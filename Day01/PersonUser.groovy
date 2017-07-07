@@ -8,3 +8,4 @@ p2.eat("Rice")
 
 output = p2.work(12)
 println output
+println p2.work(12)
