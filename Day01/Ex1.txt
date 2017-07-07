@@ -1,0 +1,15 @@
+Implement a simple Guessing game. Your code will generate a random number between 1 and 100. The user will play till he guesses the number correct. For example if the number is 77, this is how the user plays.
+
+Enter a number between 1 and 100.
+->50
+Aim Higher
+->75
+Aim Higher
+->90
+Aim Lower
+->80
+Aim Lower
+->77
+You've got it 4 attempts!!!
+
+Hint: Use Scanner 
