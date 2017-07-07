@@ -1,0 +1,17 @@
+Create a class 'MyCollectionUtil' as shown below.
+class MyCollectionUtil {
+	def lst = [1,3,14,66,79,134,23,89,11]
+
+	def compute(block){
+		//YOUR CODE GOES HERE		
+	}
+}
+
+Initialize the class with a list of numbers 1,3,14,66,79,134,23,89,11.
+Implement the compute method in the class to use  closures that can perform the following on the list of numbers.
+
+1) Print all even numbers
+2) Print all numbers greater than any number "x"
+3) Print the maximum of all the numbers
+
+You can create MyCollectionUtilUser class where you call the compute method. 
