@@ -13,6 +13,7 @@ class HomeController {
 		String message = "$word is not a palindrome"
 		if (palindromeService.check(word))
 			message = "$word is a palindrome"
-		render message
+		flash.biriyani = message
+		forward(action: "index")
 	}
 }

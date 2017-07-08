@@ -5,5 +5,6 @@
 			<br/>
 			<button type="submit">Submit</button>
 		</form>
+		<h1>${flash.biriyani}</h1>
 	</body>
 </html>
