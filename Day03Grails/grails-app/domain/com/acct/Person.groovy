@@ -9,6 +9,7 @@ class Person {
 	static hasMany = [cars: Car]
 	
     static constraints = {
+		firstName nullable:false, size: 5..15
 		lastName nullable:true
     }
 	
