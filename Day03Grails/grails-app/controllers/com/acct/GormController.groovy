@@ -140,3 +140,17 @@ class GormController {
 	}
 	
 }
+
+/*
+ * ADD CUSTOM MESSAGE 
+ * user.errors.reject(
+        'user.password.doesnotmatch',
+        ['password', 'class User'] as Object[],
+        '[Property [{0}] of class [{1}] does not match confirmation]')
+
+    user.errors.rejectValue(
+        'password',
+        'user.password.doesnotmatch')
+ * 
+ * 
+ * */
