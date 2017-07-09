@@ -1,3 +1,9 @@
+<html>
+	<head>
+		<meta name="layout" content="main"/>
+		
+	</head>
+	<body>
 <g:form action="validationExample" method="POST">
 	First Name<g:textField name="first"/><br/>
 	Last Name<g:textField name="last"/><br/>
@@ -7,3 +13,6 @@
 		<g:renderErrors/>
 	</g:hasErrors>
 </g:form>
+	
+	</body>
+</html>
