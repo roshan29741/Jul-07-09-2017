@@ -6,9 +6,46 @@ import grails.converters.JSON;
 
 class GormController {
 
+	//WRONG
+	String name
+	int age
+	
+	//Scope of a controller
+	//Scope of a service
+	
+	def act1(){
+		//render object as JSON
+		//render(view:"act2")
+		//forward(action:"act2")
+		//redirect(action:"act2")
+		//redirect(controller:"somecontroller",action:"someaction")
+	}
+	def act2(){
+		
+	}
+	
     def index() { 
 		
 	}
+	
+	def validationExample(){
+		def p = new Person(firstName:params.first,
+			lastName:params.last,
+			age:Integer.parseInt(params.age))
+		p.validate()
+		
+		if(p.hasErrors()){
+			p.errors.each {
+				println it
+			}
+			render(view:"index",model:["person":p])
+		}
+		else
+			render "Created"
+		
+	}
+	
+	
 	
 	//find all the persons whose age is greater than 20
 	def do1(){
@@ -103,3 +140,17 @@ class GormController {
 	}
 	
 }
+
+/*
+ * ADD CUSTOM MESSAGE 
+ * user.errors.reject(
+        'user.password.doesnotmatch',
+        ['password', 'class User'] as Object[],
+        '[Property [{0}] of class [{1}] does not match confirmation]')
+
+    user.errors.rejectValue(
+        'password',
+        'user.password.doesnotmatch')
+ * 
+ * 
+ * */

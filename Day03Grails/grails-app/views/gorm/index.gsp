@@ -1,6 +1,9 @@
-<g:form action="createPerson">
+<g:form action="validationExample" method="POST">
 	First Name<g:textField name="first"/><br/>
 	Last Name<g:textField name="last"/><br/>
 	Age<g:textField name="age"/><br/>
-	<g:actionSubmit value="Create Person"/>
+	<g:submitButton name="Create" value="Create person"/>
+	<g:hasErrors bean="${person}">
+		<g:renderErrors/>
+	</g:hasErrors>
 </g:form>
