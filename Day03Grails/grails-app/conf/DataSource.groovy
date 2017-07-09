@@ -4,6 +4,7 @@ dataSource {
     driverClassName = "com.mysql.jdbc.Driver"
     username = "root"
     password = "durasoft"
+	logSql = true
 }
 hibernate {
     cache.use_second_level_cache = true
@@ -18,7 +19,7 @@ hibernate {
 environments {
     development {
         dataSource {
-            dbCreate = "create" // one of 'create', 'create-drop', 'update', 'validate', ''
+            dbCreate = "validate" // one of 'create', 'create-drop', 'update', 'validate', ''
             url = "jdbc:mysql://localhost/training"
         }
     }

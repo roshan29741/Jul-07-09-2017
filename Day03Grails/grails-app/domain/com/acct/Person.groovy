@@ -6,7 +6,10 @@ class Person {
 	String lastName
 	int age
 	
+	static hasMany = [cars: Car]
+	
     static constraints = {
+		lastName nullable:true
     }
 	
 	static mapping = {
